@@ -67,7 +67,7 @@ class HangmanWord extends Word {
      */
     static async InitializeHangmanWordUsingService() 
     {          
-        const response = await fetch('http://puzzle.mead.io/puzzle');
+        const response = await fetch('https://puzzle.mead.io/puzzle');
         if (response.status === 200) {
             return response.json();
         }
