@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+</head>
+<style>
+    #countryObj {
+        width: 250px;
+        border: 1px solid;
+        padding: 5px;
+        box-shadow: 2px 5px;
+        display: none
+    }
+</style>
+<body>
+    <div>
+        <table>
+            <tr>
+
+                <h1>Search for Country by Country Code</h1>
+                <hr>
+                <td width=100><label>Country Code:</label></td>
+                <td width=10></td>
+                <td width=200><input id="c_code"></td>
+            </tr>
+        </table>        
+    </div>
+    <p></p>
+    <div id="countriesList">
+            <div id="countryObj">
+                <table>
+                    <tr>
+                        <td width=120><b>Country Code</b></td>
+                        <td id="countryCode"></td>
+                    </tr>
+                    <tr>
+                        <td width=120><b>Country Name</b></td>
+                        <td id="countryName"></td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+    <script src="app.js"></script>
+</body>

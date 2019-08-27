@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Edit Notes Page</title>
+    <link href="/styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h2>Editing Note</h2>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="actions__container actions__container--spaced">
+            <a href="/index.html">Return to home page</a>
+            <span id='lastEdited'></span>
+        </div>
+    </div>
+    <div class="container">
+        <form id="editNote-form">
+            <p><input type="text" class="title-input" placeholder="Note Title" id="note-title" name="noteTitle"></p>
+            <p><textarea class="body-input" placeholder="Note Body" id="note-body" name="noteBody"></textarea></p>
+            <button class="button button--secondary" id='remove-note'>Remove Note</button>
+            <input class="button" id="create-note" type="submit" value="Save Changes">
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="/scripts/notes-functions.js"></script>
+    <script src="/scripts/notes-edit.js"></script>
+</body>

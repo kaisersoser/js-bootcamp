@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Notes App</title>
+    <link href="/styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Note App</h1>
+            <h2 class="header__subtitle">Take notes and never forget</h2>
+        </div>
+    </header>
+    <!-- <p class="note">This website was created by Charles Vogt</p>
+            <p class="note">Special info provided in the javadoc notations</p> -->
+    <div class="actions">
+        <div class="actions__container">
+            <label>Search:
+                <input id="search-field" class="input" oninput="searchChanged(this)" type="text"
+                    placeholder="Search for notes">
+            </label>
+            <select id="filter-by" class="dropdown">
+                <option value="byEdited">Sort by last edited</option>
+                <option value="byCreated">Sort by recently created</option>
+                <option value="byAlphabetic">Sort alphabetically</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <div id='notes'></div>
+    </div>
+
+    <hr>
+
+
+    <div class="actions">
+        <div class="actions__container">
+            <form id="note-form">
+                <p><input type="text" class="title-input" placeholder="Note Title" name="noteTitle"></p>
+                <p><textarea class="body-input" placeholder="Note Body" name="noteBody"></textarea></p>
+                <input id="create-note" class="button" type="submit" value="Create Note">
+            </form>
+        </div>
+    </div>
+
+
+    <script src="/scripts/uuidv4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="/scripts/notes-functions.js"></script>
+    <script src="/scripts/notes-app.js"></script>
+</body>
+
+</html>

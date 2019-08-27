@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Hangman: The Game</title>
+    <link href="/styles/styles.css" rel="stylesheet">
+    <link href="/images/favicon.ico" rel="icon">
+</head>
+<body>
+    <!-- <h1>Hangman</h1>
+    <h2>Guess the word(s) by guessing a letter</h2> -->
+    <div>
+        <table border="0">
+            <tr>                
+                <td width="100"><h3 class="titles">Word(s):</h3></td>
+                <td width="500"><h3><font size="10"><span id="wordToGuess"></span></font></h3></td>
+            </tr>
+            <tr>
+                <td width="120"><h3 class="titles">Enter a Letter: </h3></td>
+                <td width="10"><h4><font size=10><span id="letterGuessed"></span></font></h4></td>
+                <td width=100><h4><span id="message"></span></h4></td>
+            </tr>
+            <tr>
+                <td width="120"><h3 class="titles">Tries Left: </h3></td>
+                <td width="250"><h4><font size=10><span id="triesLeft"></span></font></h4></td>
+            </tr>
+        </table>
+        <button class="button" id="retryButton" disabled="true">Retry</button>
+    </div>
+    <script src="/scripts/wordList.js"></script>
+    <script src="/scripts/hangman.js"></script>
+</body>

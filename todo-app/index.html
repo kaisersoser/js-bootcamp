@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>To-do App</title>
+	<link href="/styles/styles.css" rel="stylesheet">
+</head>
+<meta charset="utf-8" />
+<title>My TODO List - Home Page</title>
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<h1 class="header__title">
+				My TODO List
+			</h1>
+			<h2 class="header__subtitle">
+				A list of todos to track and manage daily
+			</h2>
+		</div>
+	</div>
+	<div class="actions">
+		<div class="actions__container">
+			<label>
+				<input class="input" name="searchField" id="searchField" oninput="searchTodos(this)"
+					placeholder="Search for a todo item">
+			</label>
+			<label class="checkbox">
+				<input id="hideFinishedTodos" type="checkbox">Hide completed todos
+			</label>
+		</div>
+	</div>
+	<div class="container">
+		<div id="countTodos"></div>
+		<div id="todos"></div>
+		<form id="addTodoForm">
+			<input class="input" name="todoField" type="text" placeholder="Enter Todo">
+			<input class="button" type="submit" value="Add To-do">
+		</form>
+	</div>
+
+	<script src="/scripts/uuidv4.js"></script>
+	<script src="/scripts/todo-functions.js"></script>
+	<script src="/scripts/todo.js"></script>
+</body>
+
+</html>
